@@ -66,12 +66,21 @@ nav .nav-hex {
 
 nav .lang-switch,
 .landing-nav .lang-switch {
-  margin-left: auto;
   color: var(--dimmer);
   border: 1px solid var(--dimmer);
   padding: 0.1em 0.5em;
   font-size: 0.75rem;
   border-radius: 2px;
+}
+
+nav .lang-switch:first-of-type,
+.landing-nav .lang-switch:first-of-type {
+  margin-left: auto;
+}
+
+nav .lang-switch + .lang-switch,
+.landing-nav .lang-switch + .lang-switch {
+  margin-left: -1.5rem;
 }
 
 nav .lang-switch:hover,
